@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thinkpaduser.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".StoryApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="用户注册"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".RegistActivity"
+            android:label="用户注册" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="用户登录" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StoryDetailActivity"
+            android:label="故事详情"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WriteStoryActivity"
+            android:label="@string/title_activity_write_story"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PersonalActivity"
+            android:label="个人中心" />
+        <activity android:name=".ChangeNickNameActivity" />
+        <activity android:name=".ChangeSexActivity" />
+        <activity android:name=".ChangeEmailActivity" />
+        <activity android:name=".ChangeBirthdayActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity
+            android:name=".MyStoryActivity"
+            android:label="我的故事" />
+        <!-- <activity android:name=".MyStoryDetilActivity"></activity> -->
+    </application>
+
+</manifest>

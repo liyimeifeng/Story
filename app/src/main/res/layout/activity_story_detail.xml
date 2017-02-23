@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".StoryDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_story_detail" />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#3e3d3d"
+        android:layout_gravity="bottom"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_face"/>
+        <EditText
+            android:id="@+id/activity_story_detail_et_input"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="24dp"
+            android:layout_width="240dp"
+            android:layout_weight="1"
+            android:hint=" 说点什么？"
+            android:layout_gravity="center_vertical"
+            android:background="#FFFFFF"
+            />
+        <Button
+            android:id="@+id/activity_story_detail_but_send"
+            android:text="发送"
+            android:layout_width="56dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_send"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
